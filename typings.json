@@ -1,0 +1,10 @@
+{
+  "name": "website",
+  "dependencies": {},
+  "globalDependencies": {
+    "core-js": "registry:dt/core-js#0.0.0+20160725163759",
+    "d3": "github:DefinitelyTyped/DefinitelyTyped/d3/d3.d.ts#1c05872e7811235f43780b8b596bfd26fe8e7760",
+    "node": "registry:dt/node#6.0.0+20160823142437"
+
+  }
+}

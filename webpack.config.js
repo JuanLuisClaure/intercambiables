@@ -1,8 +1,11 @@
 var webpack = require("webpack");
+var ComponentPlugin = require("component-webpack-plugin");
+var WebpackPathOrderPlugin = require('path-order-webpack-plugin');
 
 module.exports = {
   entry: {
     "app": "./www/build/main.js",
+
   },
   output: {
     path: __dirname,

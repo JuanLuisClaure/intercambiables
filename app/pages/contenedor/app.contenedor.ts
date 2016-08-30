@@ -15,30 +15,9 @@ import { servicioUrls } from '../../providers/app.promesas.urls';
 
   selector: 'my-app',
   providers: [ servicioUrls ],
-  template: `
+  styleUrls: ['app/theme/app.core.scss'],
+  templateUrl: '../app/pages/contenedor/app.contenedor.html',
 
-
-<nav >
-<ul >
-<li *ngFor="let x of urlsList">
-
-<a routerLink="{{x.data}}">{{x.nombre}}</a>
-
-</li>
-</ul>
-
-
-</nav>
-    <app-componente></app-componente>
-
-
-
-
-
-
-
-
-`
 
 
 

@@ -24,6 +24,16 @@ import { Component } from '@angular/core';
 
 
 
+<p>pensar como que este contendor es el contennedor de trees BOTONES</p>
+<hr>
+<p>son tan grandes que entran solo tres en la pantalla completa</p>
+
+
+
+<p>unenvento click manda un json a NUMEROS y agrega uno con la fecha</p>
+
+
+
 
 
 

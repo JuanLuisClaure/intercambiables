@@ -2,6 +2,7 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule }    from '@angular/http';
 import { rutasDeVistas } from './app.routing';
+import { NgSemanticModule } from 'ng-semantic';
 
 // Imports for loading & configuring the in-memory web api
 import { InMemoryWebApiModule } from 'angular2-in-memory-web-api';
@@ -42,12 +43,23 @@ import { contenedorTicketera } from './pages/ticketera/ticketera.contenedor';
 //=================================================================================
 
 import { contenedorMonitor } from './pages/monitor/monitor.contenedor';
+import { componenteDeVideo } from './pages/monitor/video/video.componente';
+import { componenteDeTicket } from './pages/monitor/tickets/ticket.componente';
+import { componenteMarquee } from './pages/monitor/marquee/marquee.componente';
+
+import { componenteDeNumeroPrimero } from './pages/monitor/numero/numero-0.componente';
+import { componenteDeNumeroSegundo } from './pages/monitor/numero/numero-1.componente';
+import { componenteDeNumeroTercero } from './pages/monitor/numero/numero-2.componente';
+
+
+
+
 
 
 
 
 @NgModule({
-  imports:      [ BrowserModule, HttpModule, InMemoryWebApiModule.forRoot(InMemoryDataService), rutasDeVistas ],
+  imports:      [ BrowserModule, HttpModule, InMemoryWebApiModule.forRoot(InMemoryDataService), NgSemanticModule, rutasDeVistas ],
   declarations: [
                   contenedorApp,
                   componenteApp,
@@ -57,13 +69,20 @@ import { contenedorMonitor } from './pages/monitor/monitor.contenedor';
 
                   contenedorPresentacion,
                   contenedorTicketera,
-                  contenedorMonitor
+
+
+                  contenedorMonitor,
+                  componenteDeVideo,
+                  componenteDeTicket,
+                  componenteMarquee,
+                  componenteDeNumeroPrimero,
+                  componenteDeNumeroSegundo,
+                  componenteDeNumeroTercero
 
 
                 ],
- providers:     [
-                  InMemoryDataService,
-                ],
+ providers:     [ InMemoryDataService ],
+
   bootstrap:    [ contenedorApp ]
 })
 

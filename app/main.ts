@@ -17,7 +17,7 @@ import 'rxjs/add/operator/switchMap';
 
 
 // libreria para responsive con la propiedad flex por porcentajes
- //import 'flexboxgrid/dist/flexboxgrid.min.css';
+import 'flexboxgrid/dist/flexboxgrid.min.css';
 //importante xs => 0 to 769px
 //importante sm => 800 to 991px
 //importante md => 992 to 1199px

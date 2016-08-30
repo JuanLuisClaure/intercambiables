@@ -3,16 +3,16 @@ import { Headers, Http } from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
 
-import { urlsTemplate } from '../../app/data/urls';
+import { MensajesMarquee } from '../../app/data/marquee';
 
 
 
 @Injectable()
-export class servicioUrls {
+export class promesasMensajesMarquee {
 
 
   private headers = new Headers({'Content-Type': 'application/json'});
-  private URLS = '../../app/URLS';  // URL to web api
+  private MENSAJES = '../../app/MENSAJES';  // URL to web api
   private handleError(error: any): Promise<any> {
 
       console.error('es un error en las promesas', error); // for demo purposes only
@@ -24,14 +24,14 @@ export class servicioUrls {
 
 
 
-  AgarrandoUrls(): Promise<urlsTemplate[]> {
+  AgarrandoMensajesMarquee(): Promise<MensajesMarquee[]> {
 
 
 
-        return this.http.get(this.URLS)
+        return this.http.get(this.MENSAJES)
                    .toPromise().then(
 
-                        response => response.json().data as urlsTemplate[]
+                        response => response.json().data as MensajesMarquee[]
 
                     ).catch(
 
@@ -41,16 +41,16 @@ export class servicioUrls {
 
   }
 
-  ContenerTiempoExacto(): Promise<urlsTemplate[]> {
+  ContenerTiempoExacto(): Promise<MensajesMarquee[]> {
 
-      return new Promise<urlsTemplate[]>(
+      return new Promise<MensajesMarquee[]>(
 
       resolve => setTimeout(resolve, 2000)
 
       ) // delay 2 seconds
       .then(
 
-        () => this.AgarrandoUrls()
+        () => this.AgarrandoMensajesMarquee()
 
       );
 

@@ -3,16 +3,16 @@ import { Headers, Http } from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
 
-import { urlsTemplate } from '../../app/data/urls';
+import { numeroDeTicket } from '../../app/data/numero';
 
 
 
 @Injectable()
-export class servicioUrls {
+export class promesasNumeros {
 
 
   private headers = new Headers({'Content-Type': 'application/json'});
-  private URLS = '../../app/URLS';  // URL to web api
+  private NUMEROS = '../../app/NUMEROS';  // URL to web api
   private handleError(error: any): Promise<any> {
 
       console.error('es un error en las promesas', error); // for demo purposes only
@@ -24,14 +24,14 @@ export class servicioUrls {
 
 
 
-  AgarrandoUrls(): Promise<urlsTemplate[]> {
+  AgarrandoNumeros(): Promise<numeroDeTicket[]> {
 
 
 
-        return this.http.get(this.URLS)
+        return this.http.get(this.NUMEROS)
                    .toPromise().then(
 
-                        response => response.json().data as urlsTemplate[]
+                        response => response.json().data as numeroDeTicket[]
 
                     ).catch(
 
@@ -41,16 +41,16 @@ export class servicioUrls {
 
   }
 
-  ContenerTiempoExacto(): Promise<urlsTemplate[]> {
+  ContenerTiempoExacto(): Promise<numeroDeTicket[]> {
 
-      return new Promise<urlsTemplate[]>(
+      return new Promise<numeroDeTicket[]>(
 
       resolve => setTimeout(resolve, 2000)
 
       ) // delay 2 seconds
       .then(
 
-        () => this.AgarrandoUrls()
+        () => this.AgarrandoNumeros()
 
       );
 

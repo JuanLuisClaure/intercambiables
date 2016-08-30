@@ -1,4 +1,10 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+
+
+
+
+
+
 
 
 
@@ -9,9 +15,10 @@ import { Component } from '@angular/core';
 
 
 @Component({
-  selector: 'monitor-contenedor',
+  selector: 'componente-de-ticket',
   styleUrls: ['app/theme/app.core.scss'],
-  templateUrl: '../app/pages/monitor/monitor.contenedor.html',
+  templateUrl: '../app/pages/monitor/tickets/ticket.componente.html',
+
 
 })
 
@@ -24,6 +31,9 @@ import { Component } from '@angular/core';
 
 
 
-export class contenedorMonitor  {
+export class componenteDeTicket  {
+
+
+
 
 }

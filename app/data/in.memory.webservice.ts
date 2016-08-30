@@ -9,7 +9,7 @@ export class InMemoryDataService implements InMemoryDbService {
 
   createDb() {
 
-    let jsondeurls = [
+    let URLS = [
 
       {id: 11, data: '/home', nombre:'home'},
       {id: 12, data: '/presentacion', nombre:'presentacion'},
@@ -19,12 +19,39 @@ export class InMemoryDataService implements InMemoryDbService {
 
 
     ];
-    let sessions = [
+    let VIDEOS = [
 
-      {id: 11, data: '/home', nombre:'home12'},
-      {id: 12, data: '/login', nombre:'login13'},
-      {id: 13, data: '/calculadora', nombre:'calculadora14'},
-      {id: 14, data: '/presupuesto', nombre:'presupuesto15'},
+      {id: 1, video: 'http://publicdomainvectors.org/photos/Vintage-Travel-Poster-Egypt-3.png'},
+      {id: 2, video: 'http://publicdomainvectors.org/photos/Vintage-Travel-Poster-Egypt-3.png'},
+      {id: 3, video: 'http://publicdomainvectors.org/photos/Vintage-Travel-Poster-Egypt-3.png'},
+      {id: 4, video: 'http://publicdomainvectors.org/photos/Vintage-Travel-Poster-Egypt-3.png'},
+
+
+
+
+    ];
+    let NUMEROS = [
+
+      {id: 11, data: 'C4',info:'es su turno'},
+      {id: 12, data: 'D6',info:'juanluis'},
+      {id: 13, data: 'A207',info:'caja A'},
+      {id: 14, data: 'CG78',info:'licenciada Monica'},
+      {id: 15, data: 'AA-1',info:'caja de ahorros'}
+
+
+
+    ];
+
+
+    let MENSAJES = [
+
+      {id: 11, data: 'C4'},
+      {id: 12, data: 'D6'},
+      {id: 13, data: 'A207'},
+      {id: 14, data: 'CG78'},
+      {id: 15, data: 'AA-1'}
+
+
 
     ];
 
@@ -32,9 +59,7 @@ export class InMemoryDataService implements InMemoryDbService {
 
 
 
-
-
-    return {jsondeurls, sessions};
+    return {URLS, VIDEOS, NUMEROS, MENSAJES};
     }
 
 }

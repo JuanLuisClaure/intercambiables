@@ -4,31 +4,14 @@ import { Component } from '@angular/core';
 
 
 
-
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
 @Component({
-
-  selector: 'dashboard-contenedor',
-  template: `
-
-
-
-<div style="border:2px solid black; text-align:center;">
-
-
-
-<{{header}}> hola vida </{{header}}>
-
-</div>
-
-
-
-`
-
-
+  selector: 'monitor-contenedor',
+  styleUrls: ['app/theme/app.core.scss'],
+  templateUrl: '../app/pages/monitor/monitor.cuatro.contenedor.html',
 
 })
 
@@ -41,8 +24,6 @@ import { Component } from '@angular/core';
 
 
 
-export class contenedorDashboard  {
-
-header:string = "h1";
+export class contenedorMonitorCuatro  {
 
 }

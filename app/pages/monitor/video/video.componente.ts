@@ -25,7 +25,7 @@ import { promesasVideos } from '../../../providers/monitor.promesas.videos';
 
 
   <sm-list class="bulleted relaxed">
-        <img *ngFor="let x of videoList"  [src]="x.video" class="imagen-formato">
+        <img *ngFor="let x of videoList"  [src]="x.video" class="imagen-formato" width="49%;">
   </sm-list>
 
 

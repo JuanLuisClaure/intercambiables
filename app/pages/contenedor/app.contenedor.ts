@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 import { urlsTemplate } from '../../../app/data/urls';
 import { servicioUrls } from '../../providers/app.promesas.urls';
 
-
+import { componenteFormularioDeDashboard } from '../dashboard/formulario/formulario.componente'
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -15,6 +15,7 @@ import { servicioUrls } from '../../providers/app.promesas.urls';
 
   selector: 'my-app',
   providers: [ servicioUrls ],
+  directives: [ componenteFormularioDeDashboard ],
   styleUrls: ['app/theme/app.core.scss'],
   templateUrl: '../app/pages/contenedor/app.contenedor.html',
 

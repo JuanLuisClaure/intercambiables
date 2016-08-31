@@ -11,17 +11,17 @@ export class InMemoryDataService implements InMemoryDbService {
 
     let URLS = [
 
-      {id: 11, data: '/home', nombre:'home'},
-      {id: 12, data: '/presentacion', nombre:'presentacion'},
-      {id: 13, data: '/ticketera', nombre:'ticketera'},
-      {id: 14, data: '/dashboard', nombre:'dashboard'},
-      {id: 15, data: '/monitor', nombre:'monitor'}
+      {id: 11, data: '/monitor_uno', nombre:'default'},
+      {id: 12, data: '/monitor_dos', nombre:'simple'},
+      {id: 13, data: '/monitor_tres', nombre:'clasico'},
+      {id: 14, data: '/monitor_cuatro', nombre:'horizonte'},
+      {id: 15, data: '/monitor_cinco', nombre:'amor'}
 
 
     ];
     let VIDEOS = [
 
-      {id: 1, video: 'http://publicdomainvectors.org/photos/Vintage-Travel-Poster-Egypt-3.png'},
+      {id: 1, video: 'http://www.clipartkid.com/images/11/18-youtube-play-button-free-cliparts-that-you-can-download-to-you-lAm1Oy-clipart.png'},
       {id: 2, video: 'http://publicdomainvectors.org/photos/Vintage-Travel-Poster-Egypt-3.png'},
       {id: 3, video: 'http://publicdomainvectors.org/photos/Vintage-Travel-Poster-Egypt-3.png'},
       {id: 4, video: 'http://publicdomainvectors.org/photos/Vintage-Travel-Poster-Egypt-3.png'},

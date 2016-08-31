@@ -13,6 +13,11 @@ import { contenedorDashboard }  from './pages/dashboard/dashboard.contenedor';
 import { contenedorPresentacion } from './pages/presentacion/presentacion.contenedor';
 import { contenedorTicketera } from './pages/ticketera/ticketera.contenedor';
 import { contenedorMonitor } from './pages/monitor/monitor.contenedor';
+import { contenedorMonitorDos } from './pages/monitor/monitor.dos.contenedor';
+import { contenedorMonitorTres } from './pages/monitor/monitor.tres.contenedor';
+import { contenedorMonitorCuatro } from './pages/monitor/monitor.cuatro.contenedor';
+import { contenedorMonitorCinco } from './pages/monitor/monitor.cinco.contenedor';
+
 
 
 const appRoutes: Routes = [
@@ -44,8 +49,24 @@ const appRoutes: Routes = [
     component: contenedorPresentacion
   },
   {
-    path: 'monitor',
+    path: 'monitor_uno',
     component: contenedorMonitor
+  },
+  {
+    path: 'monitor_dos',
+    component: contenedorMonitorDos
+  },
+  {
+    path: 'monitor_tres',
+    component: contenedorMonitorTres
+  },
+  {
+    path: 'monitor_cuatro',
+    component: contenedorMonitorCuatro
+  },
+  {
+    path: 'monitor_cinco',
+    component: contenedorMonitorCinco
   }
 
 
